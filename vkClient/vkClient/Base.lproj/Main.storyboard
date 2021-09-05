@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="vkClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 11 Pro Max - 1" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-hp-eU7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jV-Ge-ZhZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK Client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGj-dH-xCe">
+                                        <rect key="frame" x="144.5" y="130" width="125" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="32"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.11764705882352941" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-vp-SlU">
+                                        <rect key="frame" x="175" y="218.5" width="64.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="23"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.1176470588" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH5-gG-4nj">
+                                        <rect key="frame" x="167" y="339.5" width="80" height="28"/>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="23"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.1176470588" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-1M-rsM">
+                                        <rect key="frame" x="102" y="265.5" width="210" height="34"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="210" id="OyT-BR-OWL"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-1H-vMq">
+                                        <rect key="frame" x="102" y="386.5" width="210" height="34"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="210" id="UdZ-bz-HvR"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFn-eb-4mu">
+                                        <rect key="frame" x="132" y="474.5" width="150" height="54"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.11764705882352941" blue="0.10980392156862745" alpha="0.76000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="IrA-ra-qza"/>
+                                            <constraint firstAttribute="height" constant="54" id="v1F-qb-h9O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="23"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rG-nq-SpU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nH5-gG-4nj" firstAttribute="top" secondItem="GQT-1M-rsM" secondAttribute="bottom" constant="40" id="3Jt-nI-8EJ"/>
+                                    <constraint firstItem="GQT-1M-rsM" firstAttribute="centerX" secondItem="IDG-vp-SlU" secondAttribute="centerX" id="5NH-jx-KdB"/>
+                                    <constraint firstItem="AYG-1H-vMq" firstAttribute="top" secondItem="nH5-gG-4nj" secondAttribute="bottom" constant="19" id="7ch-n6-bct"/>
+                                    <constraint firstItem="xGj-dH-xCe" firstAttribute="centerX" secondItem="0jV-Ge-ZhZ" secondAttribute="centerX" id="Cqs-BV-8RP"/>
+                                    <constraint firstItem="AYG-1H-vMq" firstAttribute="centerX" secondItem="nH5-gG-4nj" secondAttribute="centerX" id="M08-F1-7t4"/>
+                                    <constraint firstItem="xGj-dH-xCe" firstAttribute="top" secondItem="0jV-Ge-ZhZ" secondAttribute="top" constant="130" id="NVK-4N-T5u"/>
+                                    <constraint firstItem="pFn-eb-4mu" firstAttribute="centerX" secondItem="AYG-1H-vMq" secondAttribute="centerX" id="VS2-tP-b5T"/>
+                                    <constraint firstItem="GQT-1M-rsM" firstAttribute="top" secondItem="IDG-vp-SlU" secondAttribute="bottom" constant="19" id="WE0-Wq-wRd"/>
+                                    <constraint firstItem="IDG-vp-SlU" firstAttribute="centerX" secondItem="xGj-dH-xCe" secondAttribute="centerX" id="d1x-g5-beL"/>
+                                    <constraint firstItem="pFn-eb-4mu" firstAttribute="top" secondItem="AYG-1H-vMq" secondAttribute="bottom" constant="54" id="fns-eV-j9c"/>
+                                    <constraint firstAttribute="trailing" secondItem="xGj-dH-xCe" secondAttribute="trailing" constant="40" id="g4a-2G-dfs"/>
+                                    <constraint firstAttribute="bottom" secondItem="pFn-eb-4mu" secondAttribute="bottom" constant="20" id="lzb-LM-5YZ"/>
+                                    <constraint firstItem="nH5-gG-4nj" firstAttribute="centerX" secondItem="GQT-1M-rsM" secondAttribute="centerX" id="sGM-pS-ds5"/>
+                                    <constraint firstItem="IDG-vp-SlU" firstAttribute="top" secondItem="xGj-dH-xCe" secondAttribute="bottom" constant="50" id="tZJ-5f-JXv"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mc6-9m-4ne"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gED-po-IOG"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jUY-hp-eU7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4ip-xd-3j4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jV-Ge-ZhZ" secondAttribute="trailing" id="75p-DD-hgs"/>
+                            <constraint firstAttribute="bottom" secondItem="jUY-hp-eU7" secondAttribute="bottom" id="WC5-Kd-Ru0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0jV-Ge-ZhZ" secondAttribute="bottom" id="gYN-mf-FjO"/>
+                            <constraint firstItem="0jV-Ge-ZhZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pNt-wL-Ju1"/>
+                            <constraint firstItem="jUY-hp-eU7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rI0-Ky-87c"/>
+                            <constraint firstItem="0jV-Ge-ZhZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tT1-VP-Trc"/>
+                            <constraint firstItem="jUY-hp-eU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xBP-Gl-XKb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="pFn-eb-4mu" id="7Ll-GN-v26"/>
+                        <outlet property="loginInput" destination="GQT-1M-rsM" id="W0M-rK-vIE"/>
+                        <outlet property="passwordInput" destination="AYG-1H-vMq" id="9u3-Dz-0ld"/>
+                        <outlet property="scrollView" destination="0jV-Ge-ZhZ" id="ETe-ci-yh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iPhone 11 Pro Max - 1" width="414" height="896"/>
+    </resources>
+</document>
