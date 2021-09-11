@@ -42,6 +42,28 @@ class LoginFormController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let login = loginInput.text!
+        let password = passwordInput.text!
+        
+        if login == "admin" && password == "admin" {
+            return true
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Введены неверные данные", preferredStyle: .alert)
+            
+            let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alert.addAction(alertAction)
+            
+            present(alert, animated: true, completion: nil)
+            
+            loginInput.text = ""
+            passwordInput.text = ""
+            
+            return false
+        }
+    }
+    
     @objc func keyboardWasShown(notification: Notification) {
         
         let info = notification.userInfo! as NSDictionary
