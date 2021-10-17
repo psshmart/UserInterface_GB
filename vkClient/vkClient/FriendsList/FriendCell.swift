@@ -9,7 +9,8 @@ import UIKit
 
 class FriendCell: UITableViewCell {
 
-    @IBOutlet weak var profilePictureCell: UIImageView!
+    
+    @IBOutlet weak var profilePictureView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
     override func awakeFromNib() {
@@ -19,8 +20,6 @@ class FriendCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

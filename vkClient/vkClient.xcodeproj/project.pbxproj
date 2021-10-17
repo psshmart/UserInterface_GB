@@ -13,7 +13,9 @@
 		9A0AF57D26E23B800085D885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0AF57C26E23B800085D885 /* Assets.xcassets */; };
 		9A0AF58026E23B800085D885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0AF57E26E23B800085D885 /* LaunchScreen.storyboard */; };
 		9A0AF58A26E23BC00085D885 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AF58926E23BC00085D885 /* LoginFormController.swift */; };
+		9A97778126FF2C7A00423EC6 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A97778026FF2C7A00423EC6 /* ProfilePictureView.swift */; };
 		9AA77D4926E5156700476A13 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AA77D4826E5155700476A13 /* Barlow-Regular.ttf */; };
+		9AEA13A527088B430062C595 /* LikesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA13A427088B430062C595 /* LikesControl.swift */; };
 		9AFB016026F7D31200111D7B /* FriendsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB015F26F7D31200111D7B /* FriendsListController.swift */; };
 		9AFB016426F7D37100111D7B /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB016326F7D37100111D7B /* FriendCell.swift */; };
 		9AFB016926F7D57100111D7B /* FriendProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB016826F7D57100111D7B /* FriendProfileController.swift */; };
@@ -34,7 +36,9 @@
 		9A0AF57F26E23B800085D885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0AF58126E23B800085D885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0AF58926E23BC00085D885 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		9A97778026FF2C7A00423EC6 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
 		9AA77D4826E5155700476A13 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Barlow-Regular.ttf"; path = "fonts/Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		9AEA13A427088B430062C595 /* LikesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesControl.swift; sourceTree = "<group>"; };
 		9AFB015F26F7D31200111D7B /* FriendsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListController.swift; sourceTree = "<group>"; };
 		9AFB016326F7D37100111D7B /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9AFB016826F7D57100111D7B /* FriendProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 			path = vkClient;
 			sourceTree = "<group>";
 		};
+		9A97777F26FF2C5D00423EC6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A97778026FF2C7A00423EC6 /* ProfilePictureView.swift */,
+				9AEA13A427088B430062C595 /* LikesControl.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		9AFB015E26F7D2DF00111D7B /* FriendsList */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		9AFB016626F7D45A00111D7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A97777F26FF2C5D00423EC6 /* CustomViews */,
 				9AFB016E26F7D65C00111D7B /* Cells */,
 			);
 			path = Views;
@@ -226,7 +240,9 @@
 			files = (
 				9AFB016C26F7D59000111D7B /* ProfilePictureCell.swift in Sources */,
 				9AFB017526F7D71E00111D7B /* MyCommunitiesController.swift in Sources */,
+				9A97778126FF2C7A00423EC6 /* ProfilePictureView.swift in Sources */,
 				9A0AF58A26E23BC00085D885 /* LoginFormController.swift in Sources */,
+				9AEA13A527088B430062C595 /* LikesControl.swift in Sources */,
 				9AFB018226F7D82900111D7B /* Group.swift in Sources */,
 				9AFB016026F7D31200111D7B /* FriendsListController.swift in Sources */,
 				9AFB017026F7D68D00111D7B /* CommunityCell.swift in Sources */,

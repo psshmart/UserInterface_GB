@@ -23,6 +23,8 @@ class FriendsListController: UITableViewController {
         User(name: "Yahiko", surname: "", profileImage: UIImage(named: "Yahiko"))
     ]
     
+    var letters = Set<Character>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         friends.sort(by: { $0.surname < $1.surname } )
@@ -33,6 +35,11 @@ class FriendsListController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        
+        return ["l"]
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -52,7 +59,7 @@ class FriendsListController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "friend", for: indexPath) as! FriendCell
         cell.nameLabel.text = friends[indexPath.row].name
         cell.surnameLabel.text = friends[indexPath.row].surname
-        cell.profilePictureCell.image = friends[indexPath.row].profileImage
+        cell.profilePictureView.image = friends[indexPath.row].profileImage
         cell.selectionStyle = .default
         return cell
     }
